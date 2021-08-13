@@ -1,11 +1,27 @@
 /* Générale */
-
+/* Application police */
 @font-face {
     font-family: 'raleway',sans-serif ;
     src: url('raleway/Raleway-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
+
+header {
+    display: flex;
+    margin-top: 10px;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#Logo{
+    width: auto;
+    height:50px ;
+    text-align: justify;
+    margin-right: auto;
+    }
 
 h1{
     font-family: raleway;
@@ -60,7 +76,16 @@ p{
 strong {
     font-weight: bold;
 }
-
+/* Mise place et en forme des photos sur la grille*/
+.fa-star{
+    font-size: 0.8em;
+}
+    .bluestar{
+        color: #0065FC;
+    }
+    .greystar{
+        color: #F2F2F2;
+    }
 
 /* Bandeau Haut de pages */
 .bandeau_fix{
@@ -68,50 +93,104 @@ strong {
     background-attachment:fixed;
     background-repeat: no-repeat;
 }
-#Logo{
-    width: auto;
-    height:50px ;
-    text-align: justify;
-    }
-    
 
 /* Phrase d'accroche sous logo */
 
 #accroche{
+    font-size: 0.8em;
+    padding-bottom: 20px;
 
     }
                
     /* Bouton Haut de pages */
            
-    #navigation
+    #navigation{
+        display: flex;
+        padding-top: 15px;
+        margin-right: 50px;
+        font-weight: bold;
+        font-size: 1em;
+        color:#0065FC;
+        padding-top: 10px;
+        border-top: 3px solid #0065FC;
+    }
+    button{ /* attention button également de filte */
+        text-decoration: none;
+            color: #0065FC;
+            padding-top: 15px;
+            font-weight: bold;
+            border: none;
+    }
         .bouton_hebe{ /*hébérgement*/
-            color: #297EFC;
+            color: black;
+            margin-right: 50px;
+            text-decoration: none;
+        
         }  
-        .bouton_acti{ /* s'inscrire*/
-            color:  #DEEBFF;
+        .bouton_acti{ /* activité */
+            color:  black;
+            margin-right: 50px;
+            text-decoration: none;
+        
         }
     
-        ..bouton_insc{ /* activité*/
-            color: #0A6BFC;
+        ..bouton_insc{ /* s'inscrire */
+            text-decoration: none;
+            color: #0065FC;
+            padding-top: 15px;
+            font-weight: bold;
+            padding: 15px 20px 0 0
+            
         }
+        
+/* Effet de survol pour les Bouton Haut de pages */
+
+#navigation:hover
+{
+    color:#0065FC;
+    padding-top: 10px;
+    border-top: 3px solid #0065FC;
+}
+
                             
 
 /* Sur quels pages nous sommes */
 
 /* Zone de Recherche */
 .rechercher{
+    padding-top: 20px;
+    
+}
 
 }   
     /* Bouton de Recherche */
     #search{
-
+        display: flex;
     }
     .icones_map{
         color: black;
 
     }
-
+    
+    .fa-map-marker-alt
+{ 
+    border-radius: 13px 0px 0px 13px;
+    font-size: 17px;
+    background-color: #f2f2f2;
+    height: 50px;
+    width:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+}
     .ville{
+        height: 50px;
+        width: 210px;
+        border: #f2f2f2 solid 2px;
+        font-weight: bold;
+        font-size: 1.1em;
+        color: black;
 
     }
 
@@ -123,8 +202,13 @@ strong {
 
     }
 
+    .search_iphone{
+
+    }
+
         /* Filtre */
         .filtres{
+            border-radius: 20px; ;
 
         }
         
@@ -144,6 +228,10 @@ strong {
 #infos{
 
 }
+    .fa-info{
+
+    }
+
 /* Zonez des résultats */
 
     /* Zone Hébergements [lieux] */
@@ -158,25 +246,39 @@ strong {
         .proposition_gauche{
 
         }
-        .fa-star{
-            font-size: 0.8em;
+        .photo_aub_cannebiere{
+
         }
-            .bluestar{
-                color: #0065FC;
-            }
-            .greystar{
-                color: #F2F2F2;
-            }
+        .descrip{
+
+        }
 
         /* Proposition 2/6 */
 
+        .photo_hotel_port{
+
+        }
+
         /* Proposition 3/6 */
+        
+        .photo_hotel_mouettes{
+
+        }
 
         /* Proposition 4/6 */
+        .photo_hotel_mer{
+            
+        }
 
         /* Proposition 5/6 */
+        .photo_aub_panier{
+
+        }
 
         /* Proposition 6/6 */
+        .photo_hotel_amina{
+
+        }
 
             /*<!--Afficher plus-->*/
             #aff_plus{
@@ -193,29 +295,90 @@ strong {
 
         }      
         
-        /* Proposition 1/6 */
-            .proposition_droite 
+        /* Proposition 1/3 */
+            .proposition_droite{
 
-        /* Proposition 2/6 */
+            }
+            .photo_description{
 
-        /* Proposition 3/6 */
+            }
+            .photo_hotel_soleil{
+
+            }
+
+        /* Proposition 2/3 */
+            .photo_chambres_hotes{
+                
+            }
+        /* Proposition 3/3 */
+            .photo_hot_bleu_blanc{
+
+            }
 
 /* Zone Activités à [lieux]*/
+.actvite-marseille{
 
+}
+#title_activite{
+
+}
         /* Proposition 1/6 */
+        .port{
 
+        }
+        .photo_titre{
+
+        }
+        .photo_port{
+
+        }
         /* Proposition 2/6 */
+        .pomegues{
 
+        }
+        .photo_pomegues{
+
+        }
         /* Proposition 3/6 */
+        .frioul{
 
+        }
+        .photo_frioul{
+
+        }
         /* Proposition 4/6 */
+        .calanques{
 
+        }
+        .photo_calanques{
+
+        }
+        
         /* Proposition 5/6 */
+        .NdGarde{
 
+        }
+        .photo_ndgarde{
+
+        }
         /* Proposition 6/6 */
+        .parc_longchamp{
 
+        }
+        .photo_longchamp{
+
+        }
 /* Bandeau Fin de pages */
 
     /* A propos*/
+    #a_propos{
+
+    }
     /* Nos hébergements*/
+    #nos_heb{
+
+    }
     /* Assistance */
+    #assistance{
+
+    }
