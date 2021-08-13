@@ -16,6 +16,13 @@ header {
     margin: auto;
 }
 
+.bandeau_fix{
+    background-position: top;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+
+
 #Logo{
     width: auto;
     height:50px ;
@@ -76,23 +83,58 @@ p{
 strong {
     font-weight: bold;
 }
-/* Mise place et en forme des photos sur la grille*/
-.fa-star{
-    font-size: 0.8em;
-}
-    .bluestar{
-        color: #0065FC;
-    }
-    .greystar{
-        color: #F2F2F2;
-    }
 
-/* Bandeau Haut de pages */
-.bandeau_fix{
-    background-position: top;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
+    /* Bouton Haut de pages */
+
+        button{ /* attention button également de filte */
+            color: black;
+            background: white;
+            border: none;
+            
+    }           
+        #navigation{
+                display: flex;
+                padding-top: 15px;
+                margin-right: 50px;
+                font-weight: bold;
+                font-size: 1em;
+            }
+    
+        #navigation a
+        {
+            text-decoration: none;
+            color: black;
+            background: white;
+        }
+        
+            #bouton_hebe{ /*hébérgement + activité */
+                margin-right: 50px;
+    
+                
+            }  
+            #bouton_insc{ /* s'inscrire */
+               
+                padding: 15px 20px 0 0
+                
+            }
+            #bouton_insc a{
+                text-decoration: none;
+                color: #0065FC;
+                padding-top: 15px;
+                font-weight: bold;
+            }
+        
+/* Effet de survol pour les Bouton Haut de pages */
+
+#navigation a:hover
+{
+    color:#0065FC;
+    padding-top: 10px;
+    border-top: 3px solid #0065FC;
 }
+     
+
+/* Sur quels pages nous sommes */
 
 /* Phrase d'accroche sous logo */
 
@@ -102,59 +144,6 @@ strong {
 
     }
                
-    /* Bouton Haut de pages */
-           
-    #navigation{
-        display: flex;
-        padding-top: 15px;
-        margin-right: 50px;
-        font-weight: bold;
-        font-size: 1em;
-        color:#0065FC;
-        padding-top: 10px;
-        border-top: 3px solid #0065FC;
-    }
-    button{ /* attention button également de filte */
-        text-decoration: none;
-            color: #0065FC;
-            padding-top: 15px;
-            font-weight: bold;
-            border: none;
-    }
-        .bouton_hebe{ /*hébérgement*/
-            color: black;
-            margin-right: 50px;
-            text-decoration: none;
-        
-        }  
-        .bouton_acti{ /* activité */
-            color:  black;
-            margin-right: 50px;
-            text-decoration: none;
-        
-        }
-    
-        ..bouton_insc{ /* s'inscrire */
-            text-decoration: none;
-            color: #0065FC;
-            padding-top: 15px;
-            font-weight: bold;
-            padding: 15px 20px 0 0
-            
-        }
-        
-/* Effet de survol pour les Bouton Haut de pages */
-
-#navigation:hover
-{
-    color:#0065FC;
-    padding-top: 10px;
-    border-top: 3px solid #0065FC;
-}
-
-                            
-
-/* Sur quels pages nous sommes */
 
 /* Zone de Recherche */
 .rechercher{
@@ -193,46 +182,151 @@ strong {
         color: black;
 
     }
+    .ville input
+{
+    text-decoration: none;
+    border: none;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    padding-left: 20px ;
+}
 
-
-    .button_search{
-        color: white;
-        background-color: #0065FC ;
-        
-
+.requette
+{
+    display:flex;
+    width: 130px;
+    height: 53px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065fc;
+    color: white;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    }
+    .requette a
+{
+    text-decoration: none;
+    background-color: #0065fc;
+    color: white;
     }
 
-    .search_iphone{
+    /* bouton rechercher pour iphone caché*/
 
+    .search_iphone{
+        display: none;
     }
 
         /* Filtre */
-        .filtres{
-            border-radius: 20px; ;
+        /* Mise en forme de la zonefiltres*/
 
-        }
-        
-            .title_filtres{
+.filtres
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 1em;
+    align-items: center;
+}
+    
+.title_filtres
+{
+    font-size: 1.1em;
+    margin-right: 0px;
+}
 
-            } 
-                    .liste_bouton_filtre{
-                        
-                    }
+.liste_bouton_filtre
+{
+    display: flex;
+    flex-wrap: wrap;
+} 
+/* Mise en forme des filtres*/
 
-                    .icones{ /* icone */
-            color: #0065FC;
-            background: #F2F2F2;
-        }
+.filtres button
+{
+    display: flex;
+    background-color: white;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1em;
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;
+    background: none;
+    padding: 0 20px 0 0;
+    margin-right: 15px;
+    cursor: pointer;
+}
+/* Mise en forme des incones pour filtres*/
+
+.icones
+{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+/* Effet de survol des boutons filtres*/
+
+button .icones:hover
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
              
         /* Infos */
-#infos{
-
+/* Mise en forme de la ligne information*/
+#info
+{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.8em;
 }
-    .fa-info{
 
-    }
+.fa-info
+{
+    display:flex ;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    color: #0065FC;
+    border-radius: 50px;
+    border: 2px solid #f2f2f2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 15px;
+}
 
 /* Zonez des résultats */
+/* Mise en page de la section hébergements*/
+.hebergement_marseille
+{
+    display: grid;
+    grid-template-columns: 30fr 15fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+}
+.fa-star
+{
+    font-size: 0.8em;
+}
+
 
     /* Zone Hébergements [lieux] */
     .Gauche{
@@ -382,3 +476,505 @@ strong {
     #assistance{
 
     }
+
+    /* Média queries affichage téléphone*/
+
+@media screen and (max-width: 767px)
+
+{
+
+
+/* Adaptation de la page à la résolution*/
+.container
+{
+    max-width: 767px;
+    margin-left: 20px;
+    width: auto;
+    
+}
+
+
+/* Mise en forme du header*/
+.entete
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr
+}
+
+#logo
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2
+}
+
+#navigation
+{
+    grid-column-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / span2;
+    border-bottom: #deebff solid 2px;
+    margin-right: -20px;
+    margin-left: -20px;
+    font-size: 1em;
+}
+#hbgt
+{
+    margin: 0;
+}
+
+#navigation div 
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navigation div a:hover
+{
+    border-style : none;
+}
+
+#navigation div:hover
+{
+    color:#0065FC;
+    border-bottom: 3px solid #0065FC;
+}
+
+#inscription
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 100px;
+}
+
+
+
+/* Mise en forme des filtres*/
+
+/* rechercher desktop caché et remplacé par version iphone */
+#search
+{
+    display: none;
+}
+
+#search_iphone
+{
+    display: flex;
+}
+
+.fa-map-marker-alt
+{ 
+    padding: 6px;
+    height: 41px;
+    width: 40px;
+}
+
+.submit
+{
+    padding: 6px;
+    border-radius: 15px;
+    height: 40px;
+    width: 40px;
+    margin-left: -10px;
+    }
+
+
+/* Mise en forme du titre*/
+#ajust
+{
+    padding-right: 48px;
+    padding-top: 5px;
+}
+
+
+/* Ajustement des filtres*/
+
+
+.filtres
+
+{
+    margin-right: 10px;
+}
+.filtres_boutons
+{
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+
+
+.filtres button
+{
+    padding-right: 5px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+.icones
+{
+    margin-right: 5px;
+}
+
+/* Ajustement partie information avec texte*/
+
+#info
+{
+    margin-top: 0px;
+}
+#info p
+{
+    padding-right: 40px;
+}
+
+
+
+/* Mise en forme de la partie hébergement*/
+
+.hebergement_marseille
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.droite
+
+{
+   flex-direction: column;
+   border-radius: 0;
+   padding-left: 15px;
+   
+}
+
+.gauche
+{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    background-color: white;
+    padding: 0px;
+    padding-right: 20px;
+    grid-row-gap: 20px;
+}
+
+.gauche h2
+
+{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.photoetdescription
+{
+    display: flex;
+}
+
+.flyergauche 
+{
+    border: none;
+}
+
+
+
+/* Mise en forme de la partie activité*/
+
+.activite_marseille
+{
+    display: flex ;  
+    flex-direction: column;
+}
+
+.photo_port,
+.photo_pomegues,
+.photo_frioul,
+.photo_calanques,
+.photo_ndgarde,
+.photo_longchamp
+{
+    height: 150px;
+}
+
+.port,
+.pomegues,
+.frioul,
+.calanques,
+.ndgarde,
+.longchamp
+{
+    padding: 0 30px 20px 0;
+}
+
+.photo_port 
+{
+    background-image: url(./images/vieux_port.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position-x: center;
+    background-position-y: 0%;
+}
+.photo_frioul {
+    background-image: url(./images/iles_frioul.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position-x: center;
+    background-position-y: 0%;
+}
+
+.photo_calanques {
+    background-image: url(./images/parc_calanques.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: inherit;
+}
+
+/* Fin de mise en forme de la partie activité*/
+
+
+/* Mise en forme du footer*/
+footer
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#propos {
+    width: auto;
+    margin-left: 20px;
+}
+
+#noshbt {
+    width: auto;
+    margin-left: 20px;
+}
+
+#assist {
+    width: auto;
+    margin-left: 20px;
+}
+footer ul li
+{
+    margin-bottom: 10px;
+}
+
+footer h5
+
+{
+    margin-bottom: 10px;
+}
+
+}
+
+/* Média queries affichage tablette*/
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+ /* Adaptation de la page à la résolution*/
+.container
+{
+    max-width: 1024px;
+    width: auto;
+    margin: 0 50px 0 50px;
+}
+
+
+
+/* Mise en forme de la partie recherche et filtres*/
+.filtres_boutons {
+    margin-right: 500px;
+    margin-bottom: 20px;
+}
+
+.filtres button
+{
+    margin-bottom: 15px;
+}
+
+
+
+/* Mise en forme de la partie hébergement*/
+
+.hebergement_marseille
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.droite
+
+{
+   flex-direction: column;
+   border-radius: 20px;
+   padding-left: 15px;
+   
+}
+
+.gauche
+{
+    order: 2;
+    background-color: white;
+    padding: 0px;
+    padding-right: 20px;
+    grid-row-gap: 20px;
+}
+
+.gauche h2
+
+{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.photoetdescription
+{
+    display: flex;
+}
+
+.flyergauche 
+{
+    border: none;
+}
+
+
+
+/* Mise en forme de la partie activités*/
+
+
+/* Disposition en grille */
+
+.activite_marseille
+{
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 1fr;
+    grid-column-gap: 45px;
+    padding-top: 40px;
+}
+
+/* Ajustements des titres*/
+
+.activite_marseille h2
+
+{
+    grid-column: 1 / span 2;
+    padding: 0;
+}
+
+/* Mise en place et en forme des photos sur la grille*/
+.port
+{
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 20px;
+}
+
+.photo_port
+
+{
+    background-image: url(./images/vieux_port.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position-x: center;
+    background-position-y: center;
+    height: 200px;
+}
+
+ .photo_titre
+{
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    margin-bottom: 30px;
+}
+
+.pomegues
+{
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 20px;
+}
+
+.photo_pomegues
+{
+    background-image: url(./images/fort_pomegues.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+}
+
+.frioul
+{
+    grid-column: 1;
+    grid-row: 3;
+    border-radius: 20px;
+    padding-top: 0px;
+}
+
+.photo_frioul
+{
+    background-image: url(./images/iles_frioul.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 200px;
+}
+
+.calanques
+{
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 20px;
+}
+
+.photo_calanques
+{
+    background-image: url(./images/parc_calanques.jpg);
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 200px;
+}
+
+.ndgarde
+{
+    grid-column: 1;
+    grid-row: 4;
+    border-radius: 20px; 
+}
+
+.photo_ndgarde
+{
+    background-image: url(./images/nd_garde.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+}
+
+
+.longchamp
+{
+    grid-column: 2;
+    grid-row: 4;
+    border-radius: 20px;
+}
+
+.photo_longchamp
+{
+    background-image: url(./images/parc_longchamp.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    height: 200px;
+}
+}

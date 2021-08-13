@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="images/logo/Reservia.ico" type="images/x-icon" />
     </head>
 
-    <body>
+    <body class="container">
 
 <!-- Bandeau Haut de pages -->
 <header class="bandeau_fix">
@@ -20,71 +20,36 @@
                     <a href="Reservia.html"><img src="images/logo/Reservia@3x.png" alt="Logo Reservia" id="Logo"></a>
                 </figure>
 
-                <!-- Phrase d'accroche sous logo -->
-
-            <div id="accroche">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br />
-                <p>En plein centre ville ou en pleine nature </p>
-            </div>
-
         </section>
-
 
       <!-- Bouton Haut de pages -->
-        <section id="navigation">
-            <p>
-                <nav>
-                    <div>
-                        <div> 
-                            <span class="bouton_hebe">
+                <nav id="navigation">
+                   
                                 <button>  
-                                <a href="Reservia Hébérgement.html">Hébergement</a>
+                                    <a id="bouton_hebe" href="Reservia Hébérgement.html">Hébergement</a>
                                 </button>
-                            </span>
-                        </div>
 
-                        <div> <button 
-                            <span class="bouton_acti">
-                                <a href="Reservia Activités.html">Activités</a>
-                            </span>
-                        </div>
-                    </div>
-                        <div> <button> 
-                            <span class="bouton_insc">
-                                <a href="Reservia S'inscrire.html">S'inscrire</a>
-                            </span>
-                        </div>
-                        
+                                <button>
+                                    <a href="Reservia Activités.html">Activités</a>
+                                </button>
                 </nav>
-            </p>
-        </section>
+                    
+                                <button id="bouton_insc">
+                                    <a href="Reservia S'inscrire.html">S'inscrire</a>
+                                </button>
 </header>
 
-  <!-- Sur quels pages nous sommes -->
-<section>
-  <p>
-      <h1>Acceuil</h1>
-  </p>
-</section>
+   <!-- Phrase d'accroche sous logo -->
+
+<div id="accroche">
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br />
+    <p>En plein centre ville ou en pleine nature </p>
+</div>
 
 <!-- Zone de Recherche -->
-<div class="rechercher">
     <!-- Bouton Recherche -->
     <div id="search">
-        <div>
-            <span class="icones_map">
-            <i class="fas fa-map-marker-alt"></i></span>
-        <div class="ville">
-            <input type="search" placeholder="Marseille, France" />
-        </div>
-            <span class="button_search"> 
-                <button>Recherche</button>
-            </span>
-        </div>
-    </div>
 
-     <!-- Partie rechercher pour iphone cachée sur desktop -->
-     <div id="search_iphone">
         <div>
             <i class="fas fa-map-marker-alt"></i>
         </div>
@@ -93,11 +58,28 @@
             <input  type="search" placeholder="Marseille, France">
         </div>
 
-        <div class="button_search">
+        <button class="requette">
+            
+            <a href="#">Rechercher</a> 
+        </button>
+    </div>
+
+    <!-- Partie rechercher pour iphone cachée sur desktop -->
+    <div id="search_iphone">
+        <div>
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+
+        <div class="ville">
+            <input  type="search" placeholder="Marseille, France">
+        </div>
+
+        <div class="submit">
             <i class="fas fa-search"></i>
         </div>
     </div>
 </div>
+
 
     <!-- Filtre -->
     <div class="filtres">
