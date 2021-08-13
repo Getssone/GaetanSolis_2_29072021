@@ -1,22 +1,221 @@
-#id
-    {
-        width: 120px;
-        height:50px ;
-    display: block;
-    margin: 0 auto;
+/* Générale */
+
+@font-face {
+    font-family: 'raleway',sans-serif ;
+    src: url('raleway/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: raleway;
+    font-weight:bolder;
+    font-style:normal;
+    text-decoration:none;
+    text-align:justify;
+    font-size: xx-large;
+
+}
+h2{
+    font-family: raleway;
+    font-weight:bolder;
+    font-style:normal;
+    text-decoration:none;
+    text-align:justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
 
 }
 
-.liste
-{
-color: #0065FC
+h3{
+    font-family: raleway;
+    font-weight:bold;
+    font-style:normal;
+    text-decoration:none;
+    text-align:justify;
+    font-size: 0.9;
+
 }
 
-{
-    color:#DEEBFF  #0065FC #F2F2F2
-    }
-*
-{
-    font
+h4{
+    font-family: raleway;
+    font-weight:bold;
+    font-style:normal;
+    text-decoration:none;
+    text-align:justify;
+    font-size: 0.9em;
+    font-weight: bold;
+
+}
+
+p{
+    font-family: raleway;
+    font-weight:normal;
+    font-style:normal;
+    text-decoration:none;
+    text-align:justify;
+}   
+
+strong {
+    font-weight: bold;
+}
+
+
+/* Bandeau Haut de pages */
+.bandeau_fix{
+    background-position: top;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+#Logo{
+    width: auto;
+    height:50px ;
+    text-align: justify;
     }
     
+
+/* Phrase d'accroche sous logo */
+
+#accroche{
+
+    }
+               
+    /* Bouton Haut de pages */
+           
+    #navigation
+        .bouton_hebe{ /*hébérgement*/
+            color: #297EFC;
+        }  
+        .bouton_acti{ /* s'inscrire*/
+            color:  #DEEBFF;
+        }
+    
+        ..bouton_insc{ /* activité*/
+            color: #0A6BFC;
+        }
+                            
+
+/* Sur quels pages nous sommes */
+
+/* Zone de Recherche */
+.rechercher{
+
+}   
+    /* Bouton de Recherche */
+    #search{
+
+    }
+    .icones_map{
+        color: black;
+
+    }
+
+    .ville{
+
+    }
+
+
+    .button_search{
+        color: white;
+        background-color: #0065FC ;
+        
+
+    }
+
+        /* Filtre */
+        .filtres{
+
+        }
+        
+            .title_filtres{
+
+            } 
+                    .liste_bouton_filtre{
+                        
+                    }
+
+                    .icones{ /* icone */
+            color: #0065FC;
+            background: #F2F2F2;
+        }
+             
+        /* Infos */
+#infos{
+
+}
+/* Zonez des résultats */
+
+    /* Zone Hébergements [lieux] */
+    .Gauche{
+
+    }
+        #title_hébergement{
+
+        }
+      
+        /* Proposition 1/6 */
+        .proposition_gauche{
+
+        }
+        .fa-star{
+            font-size: 0.8em;
+        }
+            .bluestar{
+                color: #0065FC;
+            }
+            .greystar{
+                color: #F2F2F2;
+            }
+
+        /* Proposition 2/6 */
+
+        /* Proposition 3/6 */
+
+        /* Proposition 4/6 */
+
+        /* Proposition 5/6 */
+
+        /* Proposition 6/6 */
+
+            /*<!--Afficher plus-->*/
+            #aff_plus{
+
+            }
+
+    /* Zone Les plus populaires */
+
+    .Droite{
+
+    }
+    
+        .title_populaires{
+
+        }      
+        
+        /* Proposition 1/6 */
+            .proposition_droite 
+
+        /* Proposition 2/6 */
+
+        /* Proposition 3/6 */
+
+/* Zone Activités à [lieux]*/
+
+        /* Proposition 1/6 */
+
+        /* Proposition 2/6 */
+
+        /* Proposition 3/6 */
+
+        /* Proposition 4/6 */
+
+        /* Proposition 5/6 */
+
+        /* Proposition 6/6 */
+
+/* Bandeau Fin de pages */
+
+    /* A propos*/
+    /* Nos hébergements*/
+    /* Assistance */
