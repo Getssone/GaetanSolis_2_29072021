@@ -23,20 +23,22 @@
         </section>
 
       <!-- Bouton Haut de pages -->
-                <nav id="navigation">
-                   
-                                <button>  
-                                    <a id="bouton_hebe" href="Reservia Hébérgement.html">Hébergement</a>
-                                </button>
+        <nav>
+            <ul id="navigation">
+                <li>  
+                    <a id="bouton_hebe" href="Reservia Hébérgement.html">Hébergement</a>
+                </li>
 
-                                <button>
-                                    <a href="Reservia Activités.html">Activités</a>
-                                </button>
-                </nav>
-                    
-                                <button id="bouton_insc">
-                                    <a href="Reservia S'inscrire.html">S'inscrire</a>
-                                </button>
+                <li>
+                    <a href="Reservia Activités.html">Activités</a>
+                </li>
+
+
+                <li id="bouton_insc">
+                    <a href="Reservia S'inscrire.html">S'inscrire</a>
+                </li>
+            </ul>
+        </nav>
 </header>
 
    <!-- Phrase d'accroche sous logo -->
@@ -50,7 +52,7 @@
     <!-- Bouton Recherche -->
     <div id="search">
 
-        <div>
+        <div class="icon_search">
             <i class="fas fa-map-marker-alt"></i>
         </div>
 
@@ -60,23 +62,9 @@
 
         <button class="requette">
             
-            <a href="#">Rechercher</a> 
+            <span class="hidden_small">rechercher</span> 
+            <span class="hidden_large"> <i class="fas fa-search"></i> </span>
         </button>
-    </div>
-
-    <!-- Partie rechercher pour iphone cachée sur desktop -->
-    <div id="search_iphone">
-        <div>
-            <i class="fas fa-map-marker-alt"></i>
-        </div>
-
-        <div class="ville">
-            <input  type="search" placeholder="Marseille, France">
-        </div>
-
-        <div class="submit">
-            <i class="fas fa-search"></i>
-        </div>
     </div>
 </div>
 
@@ -125,14 +113,14 @@
     </div>
     <!-- Infos-->
     
-    <div id="infos"
+    <div id="infos">
         <i class="fas fa-info"></i>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
-    </div>>
+    </div>
 </section>
 
 <!-- Zonez des résultats -->
-<section>
+<section class="hebergement_marseille">
     <!-- Zone Hébergements [lieux] -->
     <section class="Gauche">
         <div id="title_hébergement"
