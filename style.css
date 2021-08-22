@@ -89,15 +89,15 @@ a:visited {
   color: #aaa;
   text-decoration: none;
 }
-/*a tester*/
-/*.carte {
+
+
+
+.carte:hover {
+  transform: scale(1.2);
   transition: 0.8s;
 }
 
-.carte:hover {
-  transform: scale(1.1);
-}*/
-/*a tester*/
+
 
 /* Bandeau Haut de pages */
 
