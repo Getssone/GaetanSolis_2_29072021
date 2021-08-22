@@ -1,506 +1,474 @@
-/* Générale */
-/* Application police */
-@font-face {
-    font-family: 'raleway',sans-serif ;
-    src: url('raleway/Raleway-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+/*  Géneral */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
+
+:root {
+  --1er: #0065fc;
+  --2nd: #deebff;
+  --background: #f2f2f2;
+}
+
+@font-face { 
+  font-family: "raleway", sans-serif; /*lequel des deux a garder*/
+  src: url("");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "raleway",sans-serif;
+  text-decoration: none;
+}
+
+header,
+.zone_de_recherche,
+main,
+.bandeau_fin {
+  margin: auto;
+  max-width: 1800px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Spécifique */
+
+.icon-color {
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  background-color: var(--2nd);
+  color: var(--1er);
+  border-radius: 50%;
+  margin: -2.16px;
+}
+
+
+.icon-blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+  font-size: 0.8rem;
+  color: var(--1er);
+  padding: 4px 8px;
+  border-radius: 15px;
+  border: var(--background) solid 2px;
+}
+
+.zone_de_recherche .info{
+  display: flex;
+  text-decoration: none;
+}
+
+.bluestar {
+  color: var(--1er);
+  text-decoration: none;
+}
+.greystar {
+  color: #e9e6e6;
+  text-decoration: none;
+}
+.bluestar a {
+  text-decoration: none;
+}
+.greystar a{
+  text-decoration: none;
+}
+
+a:visited {
+  color: #aaa;
+  text-decoration: none;
+}
+/*a tester*/
+/*.carte {
+  transition: 0.8s;
+}
+
+.carte:hover {
+  transform: scale(1.1);
+}*/
+/*a tester*/
+
+/* Bandeau Haut de pages */
 
 header {
-    width: auto;
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-between;
-}
-.container{
-    max-width: 1400px;
-    margin: auto;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.bandeau_fix{
-    background-position: top;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
+header img{
+  margin: auto 0px;
+  height: 60px;
 }
-.bloque_log{
-    margin: 10px;
-}
-
-#Logo{
-    width: auto;
-    height:50px ;
-    text-align: justify;
-    margin: auto;
-    }
-
-h1{
-    font-family: raleway;
-    font-weight:bolder;
-    font-style:normal;
-    text-decoration:none;
-    text-align:justify;
-    font-size: x-large;
-    margin: -2px 10px;
-
-}
-h2{
-    font-family: raleway;
-    font-weight:bolder;
-    font-style:normal;
-    text-decoration:none;
-    text-align:justify;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 1.2em;
-    margin: 10px;
-
-
+header ul {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
-h3{
-    font-family: raleway;
-    font-weight:bold;
-    font-style:normal;
-    text-decoration:none;
-    text-align:justify;
-    font-size: 0.9em;
-    margin: 10px;
+header a {
+  display: inline-block;
+  padding: 32px;
+}
+header a:hover {
+  color: var(--1er);
+  border-top: solid 2px var(--1er);
+  margin-top: -5px;
+}
 
+.inscription {
+  color: var(--1er);
+  font-weight: bold;
+}
+
+.inscription a:hover {
+  margin-top: 0px;
+  border-top: none;
+}
+/*Zone de recherche */
+.zone_de_recherche h1 {
+  padding-top: 31px;
+}
+.zone_de_recherche p {
+  padding-top: 8px;
+}
+
+/*ligne de requette*/
+
+.zone_de_recherche>div {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.zone_de_recherche i {
+  width: 48px;
+  height: 48px;
+  background-color: var(--background);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.zone_de_recherche input {
+  color: black;
+  border: var(--background) solid 1px;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.zone_de_recherche:hover {
+  color: black;
+}
+
+.requette {
+  background-color: var(--1er);
+  color: white;
+  border: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.requette i {
+  display: none;
+}
+
+/*Zone Filtre*/
+
+.titre_filtre { 
+  display: flex;
+  flex-flow: row;
+  padding-top: 11px;
+  align-items: center;
+}
+
+.titre_filtre p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.titre_filtre .container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+.titre_filtre .container p {
+  align-self: center;
+  font-weight: bold;
+  padding-right: 14px;
+}
+.filtre_bouton p {
+  padding: 0px 16px;
+}
+
+.filtre_bouton {
+  margin: 16px;
+  display: flex;
+  transition:initial;
+  border: #f2f2f2 solid 2px;
+  border-radius: 100px;
+  padding: 2px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.filtre_bouton:hover {
+  background: var(--1er);
+  color: white;
+  /* border: var(--1er) 2px solid; */
+}
+
+
+.info {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+.info i{
+  height: 31px;
+  width: 31px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: white;
+  border: var(--background) 2px solid;
+  border-radius: 50%;
+  color: var(--1er);
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.info p { 
+padding-left: 0.5rem;
+padding-left: 12px;
+}
+
+main {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*Découpe Zone Principale*/
+
+#hebergements {
+  padding: 32px;
+  background: var(--background);
+  border-radius: 15px;
+  margin-right: 72px;
+  width: 58%;
+}
+.populaires {
+  padding: 32px;
+  background: var(--background);
+  border-radius: 15px;
+  width: 38%;
+}
+
+#activites { /*test non concluant car flex ne marche pas*/
+display: flex;
+padding: 16px 0;
+flex-wrap: wrap;
+flex-direction: column;
+min-width: 100%;
+}
+/*Zone Hebergements*/
+
+#hebergements .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 
 }
 
-h4{
-    font-family: raleway;
-    font-weight:bold;
-    font-style:normal;
-    text-decoration:none;
-    text-align:justify;
-    font-size: 0.6em;
+/*Proposition X/6*/
+
+#hebergements .carte {
+  background: white;
+  display: flex;
+  margin: 16px 0;
+  border-radius: 15px;
+  border: white solid 5px;
+  min-height: 190px;
+  max-height: 360px;
+  width: 250px;
+  font-size: 14px;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px 1px #d0bfbf
+}
+#hebergements .carte h3,
+#hebergements .carte p,
+#hebergements .stars-container,
+.bluestar,.greystar, {
+  padding-left: 8px;
+}
+
+#hebergements img {
+  justify-self: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+}
+/*Afficher plus*/
+.plus {
+    padding-top: 16px;
     font-weight: bold;
-    margin: 10px;
-
-
-}
-
-p{
-    font-family: raleway;
-    font-weight:normal;
-    font-style:normal;
-    text-decoration:none;
-    text-align:justify;
-    margin: 0px 10px;
-
-}   
-
-strong {
-    font-family: raleway;
-    font-weight: bold;
-}
-
-a:visited /* Quand le visiteur a déjà vu la page concernée */
-{
-       color: #AAA;
-}
-      
-        #navigation{
-                font-family: raleway;
-                width: auto;
-                height: auto;
-                display:flex;
-                padding-top: 20px;
-                margin-right: 50px;
-                font-weight: bold;
-                font-size: 1em;
-                text-align: right;
-                list-style: none;
-            }
-    
-        #navigation a
-        {
-            text-decoration: none;
-            color: black;
-            background: white;
-            margin-right: 50px;
-        }
-        
-            #bouton_insc a{
-                text-decoration: none;
-                color: #0065FC;
-                padding-top: 15px;
-                font-weight: bold;
-                margin: 0px;
-            }
-        
-/* Effet de survol pour les Bouton Haut de pages */
-
-#navigation a:hover
-{
-    color:#0065FC;
-    padding-top: 10px;
-    border-top: 3px solid #0065FC;
-}
-     
-/* Phrase d'accroche sous logo */
-
-#accroche{
-    font-size: 0.8em;
-    padding-bottom: 10px;
-
-    }
-               
-
-/* Zone de Recherche */
-.rechercher{
-    padding-top: 10px;
-    
-}
-    /* Bouton de Recherche */
-    #search{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 5px 10px;
-    }
-    .icones_map{
-        color: black;
-        display: flex;
-        justify-content: center;
-        margin: 7px;
-
-    }
-    
-    .icon_search{
-    border-radius: 14px 0px 0px 14px;
     font-size: 18px;
-    background-color: #f2f2f2;
-    height: 50px;
-    width:50px;
-    display:flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0px;
+  }
+
+
+/*Zone Les plus populaires*/
+.titre_icone {
+  display: flex;
+  justify-content: space-between;
 }
 
-.hidden_small{
-display: block;
+.titre_icone i {
+  font-size: 24px;
 }
 
-.hidden_large{
-    display: none;
-    }
-
-    .ville{
-        height: 50px;
-        width: 210px;
-        border: #f2f2f2 solid 2px;
-        font-weight: bold;
-        font-size: 1.1em;
-        color: black;
-
-    }
-    .ville input
-{
-    text-decoration: none;
-    border: none;
-    height: 50px;
-    font-size: 1em;
-    font-weight: bold;
-    color: black;
-    width: 100%;
-    padding-left: 20px ;
+.populaires .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  width: auto;
 }
 
-.requette
-{
-    display:flex;
-    width: 130px;
-    height: 53px;
-    border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #0065fc;
-    color: white;
-    font-size: 1em;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    }
-    .requette a
-{
-    text-decoration: none;
-    background-color: #0065fc;
-    color: white;
-    }
-        /* Filtre */
-        /* Mise en forme de la zonefiltres*/
-
-.filtres
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    margin-right: 50px;
-    font-weight: bold;
-    font-size: 1em;
-    align-items: center;
-}
-    
-.title_filtres
-{
-    font-size: 1.1em;
-    margin-right: 0px;
+.populaires .carte {
+  background: white;
+  display: flex;
+  min-height: 130px;
+  margin: 16px 0;
+  border-radius: 15px;
+  border: white solid 5px;
+  font-size: 14px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px 1px #d0bfbf
 }
 
-.liste_bouton_filtre
-{
-    display: flex;
-    flex-wrap: wrap;
-} 
-/* Mise en forme des filtres*/
-
-.filtres button
-{
-    display: flex;
-    background-color: white;
-    font-weight: bold;
-    align-items: center;
-    font-size: 1em;
-    border: 2px solid #f2f2f2;
-    border-radius: 50px;
-    background: none;
-    padding: 0 20px 0 0;
-    margin-right: 15px;
-    cursor: pointer;
-    height: 40px;
-    position: relative;
-    padding-left: 45px;
-}
-/* Mise en forme des incones pour filtres*/
-
-.icones
-{
-    display: flex;
-    width: 40px;
-    height: 40px;
-    background-color: #DEEBFF;
-    color: #0065FC;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-    position: absolute;
-    top: -2px;
-    left: -2px;
-}
-/* Effet de survol des boutons filtres*/
-
-button .icones:hover
-{
-    color: #0065FC;
-    background-color: #DEEBFF;
+.populaires .resumer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 32px 0 16px;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-             
-        /* Infos */
-/* Mise en forme de la ligne information*/
-#info
-{
-    
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 0.8em;
+.populaires img {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 8rem;
+  height: 120px;
+  object-fit: cover;
+}
+/*Zone Activités à [lieux]*/
+#activites .container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 
-.fa-info
-{
-    display:flex ;
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    color: #0065FC;
-    border-radius: 50px;
-    border: 2px solid #f2f2f2;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin-right: 15px;
+#activites h2 {
+  padding: 20px 0px;
 }
 
-/* Zonez des résultats */
-/* Mise en page de la section hébergements*/
-.hebergement_marseille
-{
-    display: grid;
-    grid-template-columns: 30fr 15fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-}
-.fa-star
-{
-    font-size: 0.8em;
+#activites .carte_solo {
+  border-radius: 23px;
+  box-shadow: 0px 0px 10px 1px #d0bfbf;
 }
 
-
-    /* Zone Hébergements [lieux] */
-    .Gauche{
-
-    }
-        #title_hébergement{
-
-        }
-      
-        /* Proposition 1/6 */
-        .proposition_gauche{
-
-        }
-        .photo_aub_cannebiere{
-
-        }
-        .descrip{
-
-        }
-
-        /* Proposition 2/6 */
-
-        .photo_hotel_port{
-
-        }
-
-        /* Proposition 3/6 */
-        
-        .photo_hotel_mouettes{
-
-        }
-
-        /* Proposition 4/6 */
-        .photo_hotel_mer{
-            
-        }
-
-        /* Proposition 5/6 */
-        .photo_aub_panier{
-
-        }
-
-        /* Proposition 6/6 */
-        .photo_hotel_amina{
-
-        }
-
-            /*<!--Afficher plus-->*/
-            #aff_plus{
-
-            }
-
-    /* Zone Les plus populaires */
-
-    .Droite{
-
-    }
-    
-        .title_populaires{
-
-        }      
-        
-        /* Proposition 1/3 */
-            .proposition_droite{
-
-            }
-            .photo_description{
-
-            }
-            .photo_hotel_soleil{
-
-            }
-
-        /* Proposition 2/3 */
-            .photo_chambres_hotes{
-                
-            }
-        /* Proposition 3/3 */
-            .photo_hot_bleu_blanc{
-
-            }
-
-/* Zone Activités à [lieux]*/
-.actvite-marseille{
-
+#activites img {
+  height: 400px;
+  width: 320px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
 }
-#title_activite{
-
+#activites .carte2_3 {
+  border-radius: 23px;
+  box-shadow: 0px 0px 10px 1px #d0bfbf;
 }
-        /* Proposition 1/6 */
-        .port{
+#activites .carte2_3 img {
+  max-height: 200px;
+}
+#activites .carte1_3 {
+  border-radius: 23px;
+  box-shadow: 0px 0px 10px 1px #d0bfbf;
+}
+#activites .carte1_3 img {
+  max-height: 100px;
+}
 
-        }
-        .photo_titre{
+#activites .x2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
 
-        }
-        .photo_port{
+#activites h3 {
+  padding: 16px;
+}
 
-        }
-        /* Proposition 2/6 */
-        .pomegues{
+/*Bandeau Bas de pages*/
+footer {
+  background-color: var(--background);
+}
+.bandeau_fin {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 48px;
+}
+.bandeau_fin .container {
+  min-width: 40%;
+}
+.bandeau_fin h2 {
+  font-size: 22px;
+  padding: 0 0 15px 0;
+}
 
-        }
-        .photo_pomegues{
+.bandeau_fin ul li {
+  padding: 0 0 12px 0;
+}
+.bandeau_fin a {
+  text-decoration: none;
+}
 
-        }
-        /* Proposition 3/6 */
-        .frioul{
-
-        }
-        .photo_frioul{
-
-        }
-        /* Proposition 4/6 */
-        .calanques{
-
-        }
-        .photo_calanques{
-
-        }
-        
-        /* Proposition 5/6 */
-        .NdGarde{
-
-        }
-        .photo_ndgarde{
-
-        }
-        /* Proposition 6/6 */
-        .parc_longchamp{
-
-        }
-        .photo_longchamp{
-
-        }
-/* Bandeau Fin de pages */
-
-    /* A propos*/
-    #a_propos{
-
-    }
-    /* Nos hébergements*/
-    #nos_heb{
-
-    }
-    /* Assistance */
-    #assistance{
-
-    }
-
-    @media screen and (max-width:700px) {
-        .hidden_large{
-        display: block;
-        }
-        .hidden_small{
-        display: none;
-        }
-    }
+.bandeau_fin a:hover {
+  color: var(--1er);
+}
