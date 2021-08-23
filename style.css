@@ -16,6 +16,10 @@ a {
 text-decoration: none;
 }
 
+h1,h2,h3,p {
+  color: black;
+  }
+
 body {
   font-family: "raleway",sans-serif;
   text-decoration: none;
