@@ -12,16 +12,14 @@
   --background: #f2f2f2;
 }
 
-@font-face { 
-  font-family: "raleway", sans-serif; /*lequel des deux a garder*/
-  src: url("");
-  font-weight: normal;
-  font-style: normal;
+a {
+text-decoration: none;
 }
 
 body {
   font-family: "raleway",sans-serif;
   text-decoration: none;
+  overflow-x: hidden; 
 }
 
 header,
@@ -90,23 +88,21 @@ a:visited {
   text-decoration: none;
 }
 
-
-
 .carte:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.8s;
 }
 
 .carte_solo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.8s;
 }
 .carte2_3:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.8s;
 }
 .carte1_3:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.8s;
 }
 
@@ -154,7 +150,7 @@ header a:hover {
   padding-top: 31px;
 }
 .zone_de_recherche p {
-  padding-top: 8px;
+  padding: 15px 0px;
 }
 
 /*ligne de requette*/
@@ -162,7 +158,7 @@ header a:hover {
 .zone_de_recherche>div {
   display: flex;
   align-items: center;
-  padding-top: 16px;
+  padding-top: 2px;
 }
 
 .zone_de_recherche i {
@@ -240,7 +236,7 @@ header a:hover {
   transition:initial;
   border: #f2f2f2 solid 2px;
   border-radius: 100px;
-  padding: 2px;
+  padding: 1px;
   flex-direction: row;
   flex-wrap: nowrap;
 }
@@ -252,12 +248,6 @@ header a:hover {
 }
 
 
-.info {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  padding-top: 0.8rem;
-}
 .info i{
   height: 31px;
   width: 31px;
@@ -274,7 +264,6 @@ header a:hover {
 }
 
 .info p { 
-padding-left: 0.5rem;
 padding-left: 12px;
 }
 
@@ -283,6 +272,12 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+main>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 /*Découpe Zone Principale*/
@@ -303,7 +298,7 @@ main {
 
 #activites { /*test non concluant car flex ne marche pas*/
 display: flex;
-padding: 16px 0;
+padding: 16px 40px;
 flex-wrap: wrap;
 flex-direction: column;
 min-width: 100%;
@@ -335,7 +330,7 @@ min-width: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  box-shadow: 0px 0px 10px 1px #d0bfbf
+  box-shadow: 0px 0px 10px 1px #d0bfbf;
 }
 #hebergements .carte h3,
 #hebergements .carte p,
@@ -377,19 +372,21 @@ min-width: 100%;
   justify-content: space-between;
   height: auto;
   width: auto;
+  align-items: center;
 }
 
 .populaires .carte {
   background: white;
   display: flex;
   min-height: 130px;
+  width: 95%;
   margin: 16px 0;
   border-radius: 15px;
   border: white solid 5px;
   font-size: 14px;
   flex-direction: row;
   flex-wrap: wrap;
-  box-shadow: 0px 0px 10px 1px #d0bfbf
+  box-shadow: 0px 0px 10px 1px #d0bfbf;
 }
 
 .populaires .resumer {
@@ -462,11 +459,14 @@ footer {
 }
 .bandeau_fin {
   display: flex;
-  flex-flow: row nowrap;
   padding-top: 48px;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 .bandeau_fin .container {
-  min-width: 40%;
+  min-width: 268px;
+  width: -webkit-fill-available;
+  margin: 0px 75px;
 }
 .bandeau_fin h2 {
   font-size: 22px;
