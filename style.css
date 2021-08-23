@@ -217,6 +217,7 @@ header a:hover {
 .titre_filtre p {
   font-size: 17px;
   font-weight: bold;
+  color: none;
 }
 
 .titre_filtre .container {
@@ -246,11 +247,9 @@ header a:hover {
 }
 
 .filtre_bouton:hover {
-  background: var(--1er);
-  color: white;
-  /* border: var(--1er) 2px solid; */
+  background-color: var(--2nd);
+    
 }
-
 
 .info i{
   height: 31px;
