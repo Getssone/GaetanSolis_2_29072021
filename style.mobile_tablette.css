@@ -29,7 +29,7 @@ header,
 main,
 .bandeau_fin {
   margin: auto;
-  max-width: 1800px;
+  max-width: 1200px;
 }
 
 ul {
@@ -97,77 +97,98 @@ a:visited {
   transition: 0.8s;
 }
 
-.carte_solo:hover {
-  transform: scale(1.2);
-  transition: 0.8s;
-}
-.carte2_3:hover {
-  transform: scale(1.2);
-  transition: 0.8s;
-}
-.carte1_3:hover {
-  transform: scale(1.2);
-  transition: 0.8s;
-}
+
 
 /* Bandeau Haut de pages */
 
 header {
-  padding: 5px 0px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  width: 100%;
 }
 
 header img{
   margin: auto 0px;
   height: 60px;
 }
+
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
 header ul {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
 }
 
 header a {
-  display: inline-block;
-  padding: 32px;
+  min-width: 100%;
+  margin-bottom: 2px;
+  padding: 20px 78px;
+  border-bottom: 2px solid var(--background);
+  text-align: center;
 }
 header a:hover {
   color: var(--1er);
-  border-top: solid 2px var(--1er);
-  margin-top: -5px;
+  border-top: none;
+  border-bottom: solid 3px var(--1er);
 }
 
-.inscription {
-  color: var(--1er);
-  font-weight: bold;
+.inscription a{
+padding: 0;
+position: absolute;
+top: 30px;
+right: 20px;
+text-align: right;
+border-bottom: none;
+text-decoration: none;
 }
 
 .inscription a:hover {
   margin-top: 0px;
-  border-top: none;
+  border: none
 }
+
 /*Zone de recherche */
 .zone_de_recherche h1 {
   padding-top: 31px;
 }
 .zone_de_recherche p {
-  padding-top: 8px;
+  padding: 12px 0px 20px 0px
 }
 
 /*ligne de requette*/
 
-.zone_de_recherche>div {
+.zone_de_recherche div {
   display: flex;
   align-items: center;
-  padding-top: 16px;
+  padding-top: 0px;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .zone_de_recherche i {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   background-color: var(--background);
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -181,10 +202,11 @@ header a:hover {
 .zone_de_recherche input {
   color: black;
   border: var(--background) solid 1px;
-  padding: 14px;
+  padding: 17px 17px;
   font-weight: bold;
-  font-size: 16px;
-}
+  font-size: 20px;
+  width: 76%;
+  }
 
 .zone_de_recherche:hover {
   color: black;
@@ -196,27 +218,43 @@ header a:hover {
   border: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  padding: 15px;
+  padding: 0px;
+  display: flex;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 25px;
+  border-radius: 15px;
+  margin-left: -15px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.requette span{
+  display: none;
 }
 
 .requette i {
-  display: none;
+  display: inline-block;
+  background: var(--1er);
+  display: flex;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
+
 
 /*Zone Filtre*/
 
 .titre_filtre { 
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   padding-top: 11px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .titre_filtre p {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
+  padding-top: 23px;
 }
 
 .titre_filtre .container {
@@ -240,7 +278,7 @@ header a:hover {
   transition:initial;
   border: #f2f2f2 solid 2px;
   border-radius: 100px;
-  padding: 2px;
+  padding: 0px;
   flex-direction: row;
   flex-wrap: nowrap;
 }
@@ -271,6 +309,7 @@ header a:hover {
   flex-direction: row;
   align-content: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .info p { 
@@ -279,43 +318,88 @@ padding-left: 12px;
 }
 
 main {
-  padding: 32px 0;
+  padding: 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 /*Découpe Zone Principale*/
 
-#hebergements {
-  padding: 32px;
-  background: var(--background);
-  border-radius: 15px;
-  margin-right: 72px;
-  width: 58%;
-}
+
+/*Zone Les plus populaires*/
 .populaires {
-  padding: 32px;
+  margin: 0px;
+  padding: 16px;
   background: var(--background);
-  border-radius: 15px;
-  width: 38%;
+  border-radius: 0px;
+  width: 100%;
 }
 
-#activites { /*test non concluant car flex ne marche pas*/
-display: flex;
-padding: 16px 0;
-flex-wrap: wrap;
-flex-direction: column;
-min-width: 100%;
+.titre_icone {
+  display: flex;
+  justify-content: space-between;
 }
+
+.titre_icone i {
+  font-size: 24px;
+}
+
+.populaires .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.populaires .carte {
+  background: white;
+  display: flex;
+  min-height: 130px;
+  margin: 16px 0;
+  border-radius: 15px;
+  border: white solid 5px;
+  font-size: 14px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-shadow: 0px 0px 10px 1px #d0bfbf
+}
+
+.populaires .resumer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 32px 0 16px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.populaires img {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 8rem;
+  height: 120px;
+  object-fit: cover;
+}
+
+
 /*Zone Hebergements*/
+
+#hebergements {
+  padding: 16px;
+  background: white;
+  border-radius: 0px;
+  margin: 0px;
+  width: 100%;
+}
 
 #hebergements .container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-
+  align-items: center;
+  align-content: center;
 }
 
 /*Proposition X/6*/
@@ -326,9 +410,9 @@ min-width: 100%;
   margin: 16px 0;
   border-radius: 15px;
   border: white solid 5px;
-  min-height: 190px;
-  max-height: 360px;
-  width: 250px;
+  min-height: auto;
+  max-height: auto;
+  width: 95%;
   font-size: 14px;
   align-content: flex-start;
   flex-wrap: wrap;
@@ -360,59 +444,22 @@ min-width: 100%;
   }
 
 
-/*Zone Les plus populaires*/
-.titre_icone {
-  display: flex;
-  justify-content: space-between;
-}
 
-.titre_icone i {
-  font-size: 24px;
-}
-
-.populaires .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: auto;
-  width: auto;
-}
-
-.populaires .carte {
-  background: white;
-  display: flex;
-  min-height: 130px;
-  margin: 16px 0;
-  border-radius: 15px;
-  border: white solid 5px;
-  font-size: 14px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-shadow: 0px 0px 10px 1px #d0bfbf
-}
-
-.populaires .resumer {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 32px 0 16px;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.populaires img {
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  width: 8rem;
-  height: 120px;
-  object-fit: cover;
-}
 /*Zone Activités à [lieux]*/
+
+#activites { /*test non concluant car flex ne marche pas*/
+  display: flex;
+  padding: 16px 16px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-width: 100%;
+  }
+
 #activites .container {
 display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
 }
 
 #activites h2 {
@@ -422,11 +469,13 @@ justify-content: space-between;
 #activites .carte_solo {
   border-radius: 23px;
   box-shadow: 0px 0px 10px 1px #d0bfbf;
+  max-height: 300px;
+  margin: 12px 0px
 }
 
 #activites img {
-  height: 400px;
-  width: 320px;
+  max-height: 130px;
+  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
@@ -434,6 +483,8 @@ justify-content: space-between;
 #activites .carte2_3 {
   border-radius: 23px;
   box-shadow: 0px 0px 10px 1px #d0bfbf;
+  max-height: 300px;
+  margin: 12px 0px
 }
 #activites .carte2_3 img {
   max-height: 200px;
@@ -441,6 +492,8 @@ justify-content: space-between;
 #activites .carte1_3 {
   border-radius: 23px;
   box-shadow: 0px 0px 10px 1px #d0bfbf;
+  max-height: 300px;
+  margin: 12px 0px
 }
 #activites .carte1_3 img {
   max-height: 100px;
@@ -463,10 +516,13 @@ footer {
 .bandeau_fin {
   display: flex;
   flex-flow: row nowrap;
-  padding-top: 48px;
+  padding:10px 19px;
+  margin: 0px
+
 }
 .bandeau_fin .container {
   min-width: 40%;
+  padding-top: 24px;
 }
 .bandeau_fin h2 {
   font-size: 22px;
