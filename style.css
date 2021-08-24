@@ -24,6 +24,7 @@ body {
   font-family: "raleway",sans-serif;
   text-decoration: none;
   overflow-x: hidden; 
+  width: fit-content;
 }
 
 header,
