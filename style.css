@@ -16,10 +16,6 @@ a {
 text-decoration: none;
 }
 
-h1,h2,h3,p {
-  color: black;
-  }
-
 body {
   font-family: "raleway",sans-serif;
   text-decoration: none;
@@ -27,17 +23,26 @@ body {
   width: fit-content;
 }
 
+
 header,
 .zone_de_recherche,
 main,
 .bandeau_fin {
   margin: auto;
   max-width: 1800px;
+  }
+  
+main p {
+  color: black;
 }
+
+  h1,h2,h3 {
+    color: black;
+  }
 
 ul {
   list-style: none;
-}
+  }
 
 /* Spécifique */
 
@@ -164,7 +169,7 @@ header a:hover {
   display: flex;
   align-items: center;
   padding-top: 2px;
-}
+  }
 
 .zone_de_recherche i {
   width: 48px;
@@ -218,7 +223,7 @@ header a:hover {
 .titre_filtre p {
   font-size: 17px;
   font-weight: bold;
-  color: none;
+
 }
 
 .titre_filtre .container {
@@ -248,7 +253,9 @@ header a:hover {
 }
 
 .filtre_bouton:hover {
-  background-color: var(--2nd);
+  color: white ;
+  background-color: var(--1er);
+  
     
 }
 
@@ -276,7 +283,9 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
+
 
 main>div {
   display: flex;
