@@ -21,6 +21,7 @@ body {
   text-decoration: none;
   overflow-x: hidden; 
   width: fit-content;
+  margin: -26px;
 }
 
 
@@ -469,6 +470,7 @@ justify-content: space-between;
 /*Bandeau Bas de pages*/
 footer {
   background-color: var(--background);
+  margin: -26px;
 }
 .bandeau_fin {
   display: flex;
