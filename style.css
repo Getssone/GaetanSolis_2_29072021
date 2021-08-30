@@ -470,7 +470,7 @@ justify-content: space-between;
 /*Bandeau Bas de pages*/
 footer {
   background-color: var(--background);
-  margin: -26px;
+  margin: 0px 26px;
 }
 .bandeau_fin {
   display: flex;
