@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --1er: #0065fc;
-  --2nd: #deebff;
-  --background: #f2f2f2;
-}
 
 a {
 text-decoration: none;
@@ -21,7 +16,7 @@ body {
   text-decoration: none;
   overflow-x: hidden; 
   width: fit-content;
-  margin: 26px;
+  padding: 0px 26px;
 }
 
 
@@ -54,8 +49,8 @@ ul {
   height: 50px;
   width: 50px;
   padding: 10px;
-  background-color: var(--2nd);
-  color: var(--1er);
+  background-color: #deebff;
+  color: #0065fc;
   border-radius: 50%;
   margin: -2.16px;
 }
@@ -68,10 +63,10 @@ ul {
   height: 28px;
   width: 28px;
   font-size: 12px;
-  color: var(--1er);
+  color: #0065fc;
   padding: 4px 8px;
   border-radius: 15px;
-  border: var(--background) solid 2px;
+  border: #f2f2f2 solid 2px;
 }
 
 .zone_de_recherche .info{
@@ -80,7 +75,7 @@ ul {
 }
 
 .bluestar {
-  color: var(--1er);
+  color: #0065fc;
   text-decoration: none;
 }
 .greystar {
@@ -142,13 +137,13 @@ header a {
   padding: 32px;
 }
 header a:hover {
-  color: var(--1er);
-  border-top: solid 2px var(--1er);
+  color: #0065fc;
+  border-top: solid 2px #0065fc;
   margin-top: -5px;
 }
 
 .inscription {
-  color: var(--1er);
+  color: #0065fc;
   font-weight: bold;
 }
 
@@ -175,7 +170,7 @@ header a:hover {
 .zone_de_recherche i {
   width: 48px;
   height: 48px;
-  background-color: var(--background);
+  background-color: #f2f2f2;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   padding: 10px;
@@ -187,7 +182,7 @@ header a:hover {
 }
 .zone_de_recherche input {
   color: black;
-  border: var(--background) solid 1px;
+  border: #f2f2f2 solid 1px;
   padding: 14px;
   font-weight: bold;
   font-size: 16px;
@@ -198,7 +193,7 @@ header a:hover {
 }
 
 .requette {
-  background-color: var(--1er);
+  background-color: #0065fc;
   color: white;
   border: 0;
   border-top-right-radius: 15px;
@@ -255,7 +250,7 @@ header a:hover {
 
 .filtre_bouton:hover {
   color: white ;
-  background-color: var(--1er);
+  background-color: #0065fc;
   
     
 }
@@ -267,9 +262,9 @@ header a:hover {
   flex-flow: row;
   align-items: center;
   background-color: white;
-  border: var(--background) 2px solid;
+  border: #f2f2f2 2px solid;
   border-radius: 50%;
-  color: var(--1er);
+  color: #0065fc;
   flex-direction: row;
   align-content: center;
   justify-content: center;
@@ -298,14 +293,14 @@ main>div {
 
 #hebergements {
   padding: 32px;
-  background: var(--background);
+  background: #f2f2f2;
   border-radius: 15px;
   margin-right: 72px;
   width: 58%;
 }
 .populaires {
   padding: 32px;
-  background: var(--background);
+  background: #f2f2f2;
   border-radius: 15px;
   width: 38%;
 }
@@ -334,7 +329,7 @@ min-width: 100%;
   display: flex;
   margin: 16px 0;
   border-radius: 15px;
-  border: white solid 5px;
+  padding: 6px;
   min-height: 190px;
   max-height: 360px;
   width: 250px;
@@ -349,7 +344,7 @@ min-width: 100%;
 #hebergements .carte h3,
 #hebergements .carte p,
 #hebergements .stars-container,
-.bluestar,.greystar, {
+.bluestar,.greystar{
   padding-left: 8px;
 }
 
@@ -396,7 +391,7 @@ min-width: 100%;
   width: 95%;
   margin: 16px 0;
   border-radius: 15px;
-  border: white solid 5px;
+  padding: 6px;
   font-size: 14px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -469,7 +464,7 @@ justify-content: space-between;
 
 /*Bandeau Bas de pages*/
 footer {
-  background-color: var(--background);
+  background-color: #f2f2f2;
   margin: 0px 26px;
 }
 .bandeau_fin {
@@ -480,7 +475,7 @@ footer {
 }
 .bandeau_fin .container {
   min-width: 268px;
-  width: -webkit-fill-available;
+  flex: 1;
   margin: 0px 75px;
 }
 .bandeau_fin h2 {
@@ -496,5 +491,5 @@ footer {
 }
 
 .bandeau_fin a:hover {
-  color: var(--1er);
+  color: #0065fc;
 }
