@@ -16,15 +16,13 @@ body {
   text-decoration: none;
   overflow-x: hidden; 
   width: fit-content;
-  padding: 0px 26px;
 }
-
 
 header,
 .zone_de_recherche,
 main,
 .bandeau_fin {
-  margin: auto;
+  margin: 0px 30px;
   max-width: 1800px;
   }
   
@@ -122,10 +120,15 @@ header {
   justify-content: space-between;
 }
 
-header img{
+.reservia img{
+  display: flex;
   margin: auto 0px;
   height: 60px;
 }
+.logo_grid img{
+  display: none;
+}
+
 header ul {
   display: flex;
   flex-wrap: nowrap;
@@ -275,7 +278,7 @@ padding-left: 12px;
 }
 
 main {
-  padding: 32px 0;
+  padding: 32px 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -465,7 +468,6 @@ justify-content: space-between;
 /*Bandeau Bas de pages*/
 footer {
   background-color: #f2f2f2;
-  margin: 0px 26px;
 }
 .bandeau_fin {
   display: flex;

@@ -7,47 +7,66 @@ header {
   align-content: flex-start;
   align-items: flex-start;
   padding: 0;
-  width: 100%;
+  width: 50%;
 }
 
 header nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 0;
-  width: 100%;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
+width: 90%;
+  
 }
+
+
 header ul {
-  padding: 0;
-  width: 100%;
-  justify-content: space-evenly;
-  align-content: center;
+
   align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  
 }
+
+.reservia {
+  display: none;
+}
+.logo_grid img{
+  display: flex;
+  margin: auto 0px;
+  height: 60px;
+}
+
 
 header a {
   min-width: 100%;
   margin-bottom: 2px;
   padding: 20px 78px;
-  border-bottom: 2px solid var(--background);
+  border-bottom: 2px solid #f2f2f2;
   text-align: center;
 }
 header a:hover {
   border-top: none;
-  border-bottom: solid 3px var(--1er);
+  border-bottom: solid 3px #0065fc;
+}
+
+.inscription{
+grid-column-start: 2;
+grid-row-start: 1;
 }
 
 .inscription a{
 padding: 0;
-position: absolute;
-top: 51px;
-right: -77px;
-text-align: right;
 border-bottom: none;
 text-decoration: none;
+}
+.hebe{
+  grid-column-start: 1;
+  grid-row-start: 2;
+  width: 100%;
+}
+.acti{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  width: 100%;
 }
 
 
@@ -96,7 +115,7 @@ text-decoration: none;
 
 .requette i {
   display: inline-block;
-  background: var(--1er);
+  background: #0065fc;
   display: flex;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -122,9 +141,9 @@ text-decoration: none;
   flex-flow: row;
   align-items: center;
   background-color: white;
-  border: var(--background) 2px solid;
+  border: #f2f2f2 2px solid;
   border-radius: 50%;
-  color: var(--1er);
+  color: #0065fc;
   flex-direction: row;
   align-content: center;
   justify-content: center;
