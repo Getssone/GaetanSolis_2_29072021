@@ -305,9 +305,10 @@ main>div {
   width: 58%;
   margin-left: 20px;
 }
-}
+
 .populaires {
   padding: 32px;
+  margin: 0px 20px 0px 0px;
   background: #f2f2f2;
   border-radius: 15px;
   width: 38%;
@@ -402,7 +403,6 @@ min-width: 100%;
   padding: 6px;
   font-size: 14px;
   flex-direction: row;
-  flex-wrap: wrap;
   box-shadow: 0px 0px 10px 1px #d0bfbf;
 }
 

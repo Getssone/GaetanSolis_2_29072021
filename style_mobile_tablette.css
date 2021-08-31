@@ -1,4 +1,6 @@
-/* Bandeau Haut de pages */
+html{
+  width: 141%;
+}/* Bandeau Haut de pages */
 
 header {
   width: 90%;
