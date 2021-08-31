@@ -1,17 +1,11 @@
 /* Bandeau Haut de pages */
 
 header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  align-items: flex-start;
-  padding: 0;
-  width: 50%;
+  width: 90%;
 }
 
 header nav {
-width: 90%;
+flex: 1;
   
 }
 
@@ -30,9 +24,7 @@ header ul {
   display: none;
 }
 .logo_grid img{
-  display: flex;
-  margin: auto 0px;
-  height: 60px;
+  display: flex;  
 }
 
 
@@ -61,12 +53,10 @@ text-decoration: none;
 .hebe{
   grid-column-start: 1;
   grid-row-start: 2;
-  width: 100%;
 }
 .acti{
   grid-column-start: 2;
   grid-row-start: 2;
-  width: 100%;
 }
 
 
@@ -88,11 +78,11 @@ text-decoration: none;
 }
 
 .zone_de_recherche i {
-  width: 60px;
-  height: 60px;
+  width: 53px;
+  height: 53px;
 }
 .zone_de_recherche input {
-  padding: 17px 17px;
+  padding: 14px 17px;
   font-weight: bold;
   font-size: 20px;
   width: 68%;
