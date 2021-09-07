@@ -1,7 +1,3 @@
-html{
-  width: 141%;
-}/* Bandeau Haut de pages */
-
 header {
   width: 90%;
 }
@@ -20,6 +16,9 @@ header ul {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   
+}
+body{
+  width:fit-content;
 }
 
 .reservia {
